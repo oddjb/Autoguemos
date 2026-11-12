@@ -1,0 +1,36 @@
+{
+  "content_scripts": [
+    {
+      "js": [
+        "crypto.js",
+        "content.js"
+      ],
+      "matches": [
+        "https://conjuguemos.com/*",
+        "https://*.conjuguemos.com/*"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "description": "Use your own answer lists and verb charts to answer Conjuguemos activities.",
+  "manifest_version": 3,
+  "name": "Autoguemos (Conjugemos Helper)",
+  "version": "2.7",
+  "icons": {
+    "128": "icon128.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icon128.png"
+      ],
+      "matches": [
+        "https://conjuguemos.com/*",
+        "https://*.conjuguemos.com/*"
+      ]
+    }
+  ]
+}
